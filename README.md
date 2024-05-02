@@ -1,8 +1,8 @@
-#Getting-and-Cleaning-Data-Course-Project
-#get_project_data.R
+# Getting-and-Cleaning-Data-Course-Project
+# get_project_data.R
 It is the script that was used to download and unzip the files, needed to perform the analysis in the first place. It is recommended to use it but not necessary, as long as the files for the 'Human Activity Recognition Using Smartphones Dataset Version 1.0' are present in a folder with name 'UCI HAR Dataset' in the working directory. A lot of comments explain the code and informative messages are printed in console while it is executed, describing what it tries to do. Also, it creates a file with name 'log.txt' in the current working directory (only if it downloads the zipped data) to store the url and the date of the download. If the a folder with name 'UCI HAR Dataset' already exists in the working directory it just informs the user about it's existence and doesn't download the files.
 
-#run_analysis.R
+# run_analysis.R
 It is the main script of the repository. In order to produce the 'tidy_data_summary' table, the script 'run_analysis.R' was created and used. It performs the following tasks:
 
 Merges the training and the test sets to create one data set with target variables. Binds these files,
@@ -27,7 +27,7 @@ Write the data in a text file in the present working directory, by the command:
 
 write.table(tidy_data_summary, "tidy_data_summary.txt", row.names = FALSE)
 
-#tidy_data_summary.txt
+# tidy_data_summary.txt
 The tidy dataset that was produced by the script 'run_analysis.txt', which contains the averages of selected features from the original 'Human Activity Recognition Using Smartphones Dataset Version 1.0'
 
 To read the table back on R correctly, you can use the following command:
